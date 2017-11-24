@@ -14,5 +14,11 @@
 
 
 <ion-content padding>
+    <ion-row>
+        <ion-item class="item-input">
+            <ion-input type="number" [(ngModel)]="codeParam.usertel" placeholder="手机号"></ion-input>
+            <button item-right ion-button round [disabled]="verifyCode.disable" (click)="getCode()">{{verifyCode.verifyCodeTips}}</button>
+        </ion-item>
+    </ion-row>
 
 </ion-content>
